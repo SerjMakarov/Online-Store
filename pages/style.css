@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/* headers styles */
+
+.header {
+    background: #222;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.header-top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-menu-bode-elem {
+    list-style-type: none;
+    margin: 19px 0;
+}
+
+.top-menu-bode-elem .logo {
+    margin-right: 41px;
+}
+
+.header-top-menu .top-menu-bode-elem:first-child li {
+    display: inline;
+}
+
+
+.header-top-menu .top-menu-bode-elem:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 200px;
+}
+
+.sandwich span {
+    display: block;
+    content: '';
+    height: 2px;
+    width: 24px;
+    background-color: #fff;
+}
+
+.sandwich span:nth-child(even) {
+    margin: 10px 0;
+}
+
+.top-menu-bode-elem:last-child li:nth-child(even) {
+    margin: 0 33px;
+}
+
+/* banner styles */
+
+.banner {
+    background: #F1E4E6;
+    margin-bottom: 65px;
+}
+
+.container-banner {
+    display: flex;
+    align-items: center;
+}
+
+.banner .elem-foto {
+    min-height: 764px;
+    min-width: 50%;
+    background: url(img/photo-man-jacket.png) no-repeat -225px / cover;
+}
+
+.vertical-line {
+    height: 92px;
+    width: 12px;
+    background: #F16D7F;
+    margin-right: 16px;
+}
+
+.banner .elem-text {
+    flex: 1;
+}
+
+.banner .elem-text h1 {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+}
+
+.banner .elem-text h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38.4px;
+    color: #222222;
+}
+
+.banner .elem-text .text-color {
+    color: #F16D7F;
+}
+
+/* navigator styles */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 96px;
+}
+
+.nav .nav-ticket {
+    min-width: 360px;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(33, 22, 22, 0.7);
+}
+
+.nav-ticket--women {
+    background-image: url(img/photo-for-women.png);
+}
+
+.nav-ticket--man {
+    background-image: url(img/photo-for-man.png);
+}
+
+.nav-ticket--kids {
+    background-image: url(img/photo-for-kids.png);
+}
+
+.nav .nav-ticket--accesories {
+    background-position: center;
+    background-image: url(img/photo-for-accesories.png);
+    background-size: contain;
+    flex:1 100%;
+    margin-top: 30px;
+}
+
+.nav .nav-ticket--accesories .text-header {
+    margin: 62px 419px;
+}
+
+.nav-ticket .text-header {
+    margin: 103px;
+}
+
+.text-header {
+    text-align: center;
+}
+
+.text-header h2{
+    font-size: 16px;
+    line-height: 19.2px;
+    text-align: center;
+    color: #FFF;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.text-header a {
+    font-size: 24px;
+    line-height: 28.8px;
+    text-align: center;
+    text-decoration: none;
+    color: #F16D7F;
+    text-transform: uppercase;
+}
+
+/* offer ticket style */
+
+.offer-ticket-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    margin-top: 48px;
+   
+}
+
+.offer-ticket-head {
+    text-align: center;
+}
+
+.offer-ticket-head h2{
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 6px;
+}
+
+.offer-ticket-head p{
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+}
+
+.offer-ticket-body .ticket {
+    max-width: 360px;
+}
+
+.ticket img {
+    display: block;
+}
+
+.ticket .tiket-footer {
+    background-color: #F8F8F8;
+    padding-bottom: 20px;
+}
+
+.offer-ticket-body .tiket-footer h3 {
+    padding: 23.35px 193.89px 0 18px;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.offer-ticket-body .tiket-footer p {
+    margin: 12.65px 0 18px 16.46px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+}
+
+.offer-ticket-body .tiket-footer .price {
+    margin: 0 289.13px 0 18.41px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+}
+
