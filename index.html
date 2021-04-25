@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OnlineStore</title>
     <link rel="stylesheet" href="style.css">
+    <?xml-stylesheet type="text/css" href="style.css"?>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 </head>
@@ -22,7 +23,7 @@
                     </li>
                 </ul>
                 <ul class="top-menu-bode-elem">
-                    <li class="sandwich">
+                    <li id="js-sandwich" class="sandwich">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -37,6 +38,35 @@
                 </ul>
             </div>
         </div>
+        <nav id="js-sandwich-menu" class="sandwich-menu">
+            <div class="close-header-menu"><a id="js-btn-close" href="#"><img src="img/close-head-menu.svg" alt="close menu"></a></div>
+            <h2 class="subtitle">menu</h2>
+            <ul class="items">
+                <li>man</li>
+                <li class="item"><a href="#">Accessories</a></li>
+                <li class="item"><a href="#">Bags</a></li>
+                <li class="item"><a href="#">Denim</a></li>
+                <li class="item"><a href="#">T-Shirts</a></li>
+            </ul>
+            <ul class="items">
+                <li>women</li>
+                <li class="item"><a href="#">Accessories</a></li>
+                <li class="item"><a href="#">Jackets & Coats</a></li>
+                <li class="item"><a href="#">Polos</a></li>
+                <li class="item"><a href="#">T-Shirts</a></li>
+                <li class="item"><a href="#">Shirts</a></li>
+            </ul>
+            <ul class="items">
+                <li>kids</li>
+                <li class="item"><a href="#">Accessories</a></li>
+                <li class="item"><a href="#">Jackets & Coats</a></li>
+                <li class="item"><a href="#">Polos</a></li>
+                <li class="item"><a href="#">T-Shirts</a></li>
+                <li class="item"><a href="#">Shirts</a></li>
+                <li class="item"><a href="#">Bags</a></li>
+            </ul>
+        </nav>
+
     </div>
     <div class="banner">
         <div class="container container-banner">
@@ -49,8 +79,8 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="nav">
+    <div class="nav">
+        <div class="nav-container container">
             <div class="nav-ticket nav-ticket--women">
                 <div class="text-header">
                     <h2>30% off</h2>
@@ -77,56 +107,62 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="offer-ticket">
+    <div class="offer-ticket">
+        <div class="container">
             <div class="offer-ticket-head">
                 <h2>Fetured Items</h2>
                 <p>Shop for items based on what we featured in this week</p>
             </div>
             <div class="offer-ticket-body">
                 <div class="ticket">
-                    <img src="img/photo-1.jpg" alt="photo man">
-                    <div class="tiket-footer">
+                    <a href="#" class="btn--rectangle"><img src="img/ticket-add-basket.svg" alt="add in basket">Add to Cart</a>
+                    <img class="ticket-head" src="img/photo-1.jpg" alt="photo man">
+                    <div class="ticket-footer">
                         <h3>ellery x m'o capsule</h3>
                         <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <span class="price">$52.00</span>
                     </div>
                 </div>
                 <div class="ticket">
-                    <img src="img/photo-2.jpg" alt="photo women">
-                    <div class="tiket-footer">
+                    <a href="#" class="btn--rectangle"><img src="img/ticket-add-basket.svg" alt="add in basket">Add to Cart</a>
+                    <img class="ticket-head" src="img/photo-2.jpg" alt="photo women">
+                    <div class="ticket-footer">
                         <h3>ellery x m'o capsule</h3>
                         <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <span class="price">$52.00</span>
                     </div>
                 </div>
                 <div class="ticket">
-                    <img src="img/photo-3.jpg" alt="photo man">
-                    <div class="tiket-footer">
+                    <a href="#" class="btn--rectangle"><img src="img/ticket-add-basket.svg" alt="add in basket">Add to Cart</a>
+                    <img class="ticket-head" src="img/photo-3.jpg" alt="photo man">
+                    <div class="ticket-footer">
                         <h3>ellery x m'o capsule</h3>
                         <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <span class="price">$52.00</span>
                     </div>
                 </div>
                 <div class="ticket">
-                    <img src="img/photo-4.jpg" alt="photo man">
-                    <div class="tiket-footer">
+                    <a href="#" class="btn--rectangle"><img src="img/ticket-add-basket.svg" alt="add in basket">Add to Cart</a>
+                    <img class="ticket-head" src="img/photo-4.jpg" alt="photo man">
+                    <div class="ticket-footer">
                         <h3>ellery x m'o capsule</h3>
                         <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <span class="price">$52.00</span>
                     </div>
                 </div>
                 <div class="ticket">
-                    <img src="img/photo-5.jpg" alt="photo women">
-                    <div class="tiket-footer">
+                    <a href="#" class="btn--rectangle"><img src="img/ticket-add-basket.svg" alt="add in basket">Add to Cart</a>
+                    <img class="ticket-head" src="img/photo-5.jpg" alt="photo women">
+                    <div class="ticket-footer">
                         <h3>ellery x m'o capsule</h3>
                         <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <span class="price">$52.00</span>
                     </div>
                 </div>
                 <div class="ticket">
-                    <img src="img/photo-6.jpg" alt="photo women">
-                    <div class="tiket-footer">
+                    <a href="#" class="btn--rectangle"><img src="img/ticket-add-basket.svg" alt="add in basket">Add to Cart</a>
+                    <img class="ticket-head" src="img/photo-6.jpg" alt="photo women">
+                    <div class="ticket-footer">
                         <h3>ellery x m'o capsule</h3>
                         <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <span class="price">$52.00</span>
@@ -192,5 +228,6 @@
             </div>
         </div>          
     </div>
+    <script src="js/main.js"></script>
 </body>
 </html>

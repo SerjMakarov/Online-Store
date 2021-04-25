@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+ul {
+    list-style-type: none;
+}
+
 body {
     font-family: 'Lato', sans-serif;
 }
@@ -11,6 +15,7 @@ body {
 /* headers styles */
 
 .header {
+    position: relative;
     background: #222;
 }
 
@@ -26,7 +31,6 @@ body {
 }
 
 .top-menu-bode-elem {
-    list-style-type: none;
     margin: 19px 0;
 }
 
@@ -37,7 +41,6 @@ body {
 .header-top-menu .top-menu-bode-elem:first-child li {
     display: inline;
 }
-
 
 .header-top-menu .top-menu-bode-elem:last-child {
     display: flex;
@@ -60,6 +63,64 @@ body {
 
 .top-menu-bode-elem:last-child li:nth-child(even) {
     margin: 0 33px;
+}
+
+.sandwich-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    max-width: 232px;
+    background: #FFF;
+    padding: 37px 143px 157px 33px  ;
+}
+
+.sandwich-menu .close-header-menu {
+    display: flex;
+    justify-content: flex-end;
+    min-width: 180px;
+    margin-top: -20px;
+}
+
+.sandwich-menu .subtitle {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000;
+    text-transform: uppercase;
+    padding-bottom: 24px;
+}
+
+.sandwich-menu .items {
+    min-width: 180px;
+}
+
+.sandwich-menu .item {
+    margin-left: 20px;
+    margin-top: 9px;
+}
+
+.sandwich-menu .item a {
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    text-decoration: none;
+}
+
+.sandwich-menu .items li:first-child {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+}
+
+.sandwich-menu .items li:last-child {
+    padding-bottom: 20px;
+}
+
+/* Псевдоклассы header */
+
+.sandwich:hover > span {
+    background: #F16D7F;
 }
 
 /* banner styles */
@@ -111,7 +172,7 @@ body {
 
 /* navigator styles */
 
-.nav {
+.nav-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -212,12 +273,12 @@ body {
     display: block;
 }
 
-.ticket .tiket-footer {
+.ticket .ticket-footer {
     background-color: #F8F8F8;
     padding-bottom: 20px;
 }
 
-.offer-ticket-body .tiket-footer h3 {
+.offer-ticket-body .ticket-footer h3 {
     padding: 23.35px 193.89px 0 18px;
     font-size: 13px;
     line-height: 16px;
@@ -225,7 +286,7 @@ body {
     text-transform: uppercase;
 }
 
-.offer-ticket-body .tiket-footer p {
+.offer-ticket-body .ticket-footer p {
     margin: 12.65px 0 18px 16.46px;
     font-weight: 300;
     font-size: 14px;
@@ -233,7 +294,7 @@ body {
     color: #5D5D5D;
 }
 
-.offer-ticket-body .tiket-footer .price {
+.offer-ticket-body .ticket-footer .price {
     margin: 0 289.13px 0 18.41px;
     font-size: 16px;
     line-height: 19px;
@@ -251,6 +312,44 @@ body {
     padding: 14.5px 38.5px;
     color: #FF6A6A;
     text-decoration: none;
+}
+
+.ticket {
+    position: relative;
+    background: rgba(58, 56, 56);
+}
+
+.ticket .btn--rectangle {
+    position: absolute;
+    top: 133px;
+    left: 107px;
+    display: none;
+    border: 1px solid #FFF;
+    padding: 12.5px 15px;
+    color: #FFF;
+    text-decoration: none;
+    z-index: 99999;
+}
+
+.ticket .btn--rectangle img {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 11px;
+}
+
+/*Псевдоклассы offer ticket style*/
+
+.ticket:hover .ticket-head {
+    opacity: 0.5;
+}
+
+.ticket:hover .btn--rectangle {
+    display: block;
+}
+
+.btn--rectangle:hover {
+    background: #FF6A6A;
+    color: #FFF;
 }
 
 /* service style */
@@ -294,10 +393,6 @@ body {
 }
 
 /* style footer */
-
-.footer {
-    /* background: url(img/background-contact-footer.jpg) no-repeat 100% / 100%; */
-}
 
 .contact-footer {
     background: #222224;
@@ -405,6 +500,28 @@ body {
     line-height: 19px;
     color: #FBFBFB;
 }
+
+/* Псевдоклассы footer */
+
+.send-data .btn:hover {
+    opacity: 0.8;
+}
+
+.send-data input:focus {
+    padding: 21px 0 21px 0;
+    background: #E1E1E1;
+    border: 1px solid #F16D7F;;
+    border-radius: 50px 0px 0px 50px;
+    min-width: 256px;
+    padding-left: 22px;
+    outline: none;
+}
+
+.social-networks div:hover {
+    background: #F16D7F;
+}
+
+/* media requests */
 
 
 
