@@ -202,13 +202,12 @@ body {
 .nav .nav-ticket--accesories {
     background-position: center;
     background-image: url(img/photo-for-accesories.png);
-    background-size: contain;
     flex:1 100%;
     margin-top: 30px;
 }
 
 .nav .nav-ticket--accesories .text-header {
-    margin: 62px 419px;
+    margin: 62px 0;
 }
 
 .nav-ticket .text-header {
@@ -243,7 +242,8 @@ body {
 
 .offer-ticket-body {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fill, minmax(28%, 3fr));
     grid-row-gap: 30px;
     grid-column-gap: 30px;
     margin-top: 48px;
@@ -266,11 +266,13 @@ body {
 }
 
 .offer-ticket-body .ticket {
-    max-width: 360px;
+    /* max-width: 0; */
 }
 
 .ticket img {
     display: block;
+    min-height: auto;
+    max-width: 100%;
 }
 
 .ticket .ticket-footer {
@@ -320,15 +322,10 @@ body {
 }
 
 .ticket .btn--rectangle {
-    position: absolute;
-    top: 133px;
-    left: 107px;
-    display: none;
     border: 1px solid #FFF;
     padding: 12.5px 15px;
     color: #FFF;
     text-decoration: none;
-    z-index: 99999;
 }
 
 .ticket .btn--rectangle img {
@@ -339,8 +336,19 @@ body {
 
 /*Псевдоклассы offer ticket style*/
 
-.ticket:hover .ticket-head {
-    opacity: 0.5;
+.ticket:hover .ticket-hidden {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ticket-hidden {
+    display: none;
+    height: 100%;
+    z-index: 99999;
+    position: absolute;
+    width: 100%;
+    background: rgba(76, 78, 82, 0.5);
 }
 
 .ticket:hover .btn--rectangle {
@@ -522,6 +530,342 @@ body {
 }
 
 /* media requests */
+/* @media (max-width: 1024px){
+    .header-top-menu {
+        padding: 0 30px;
+    }
 
+    .banner .elem-foto {
+        background: url(img/photo-man-jacket.png) no-repeat -161px / cover;
+    }
 
+    .offer-ticket-body {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(40%, 3fr));
+        grid-row-gap: 30px;
+        grid-column-gap: 30px;
+        justify-items: center;
+        padding: 0 30px;
+    }
 
+    .offer-ticket-body .ticket {
+        min-width: 100%;
+    }
+
+    .ticket img {
+        min-width: 100%;
+    }
+
+    .nav-container {
+        padding: 10px;
+    }
+
+    .nav-ticket .text-header {
+        padding: 0;
+    }
+
+    .nav .nav-ticket {
+        min-width: 0;
+    }
+
+    .nav .nav-ticket--accesories {
+        margin-top: 20px;
+    }
+
+    .nav .nav-ticket--accesories .text-header {
+        margin: 51px 0;
+    }
+    
+    .contact-head {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+
+    .contact-head .send-data {
+        margin-right: 0;
+    }
+
+    .contact-footer .container {
+        padding: 0 30px;
+    }
+} */
+
+ @media (min-width: 768px) and (max-width: 1080px){
+
+    .header-top-menu {
+        padding: 0 30px;
+    }
+
+    .banner .elem-foto {
+        min-height: 367px;
+        background: url(img/photo-man-jacket.png) no-repeat -53px / contain;
+    }
+
+    .banner .elem-text h1 {
+        font-size: 43px;
+        line-height: 47px;
+        color: #222222;
+    }
+
+    .banner .elem-text h2 {
+        font-size: 29px;
+        line-height: 35.4px;
+        color: #222222;
+    }
+
+    .nav-container {
+        padding: 10px;
+    }
+
+    .nav-ticket .text-header {
+        margin: 0;
+    }
+    
+    .nav .nav-ticket--accesories .text-header {
+        padding: 31px;
+    }
+
+    .nav-ticket .text-header {
+        padding: 54px;
+    }
+
+    .nav .nav-ticket {
+        min-width: 32%;
+    }
+
+    .nav .nav-ticket--accesories {
+        margin-top: 20px;
+        background-size:auto;
+    }
+
+    .offer-ticket-body {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(40%, 3fr));
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+        justify-items: center;
+        padding: 0 30px;
+    }
+
+    .nav .nav-ticket--accesories .text-header {
+        margin: 0 0;
+    }
+
+    .offer-ticket-body {
+        padding: 0 10px;
+    }
+
+    .ticket img {
+        min-width: 100%;
+    }
+
+    .ticket .btn--rectangle img {
+        min-width: 0;
+    }
+
+    .ticket .btn--rectangle img {
+        display: inline-block;
+        vertical-align: middle;
+        padding-right: 11px;
+        height: auto;
+        min-width: 0;
+    
+    }
+
+    .ticket .btn--rectangle {
+        border: 1px solid #FFF;
+        padding: 12.5px 15px;
+        color: #FFF;
+        text-decoration: none;
+    }
+
+    .services-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-ticket {
+        margin: 48px 0 24px 0;
+    }
+
+    .services-container .service-ticket:last-child {
+        margin-bottom: 64px;
+    }
+
+    .contact-head {
+        display: flex;
+        justify-content: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-head .send-data {
+        margin-right: 0;
+    }
+
+    .contact-head .about {
+        margin: 97px 0 0 0;
+    }
+
+    .send-data {
+        margin: 50px 0 140px 0;
+    }
+
+    .contact-footer .copyright {
+        margin-left: 30px;
+    }
+    
+
+    .contact-footer .social-networks {
+        margin-right: 30px;
+    }
+}
+
+@media (min-width: 230px) and (max-width: 767px) {
+
+    .header-top-menu {
+        padding: 0 30px;
+    }
+
+    .wrapper-auth {
+        display: none;
+    }
+
+    .banner .elem-text {
+        flex: 1;
+        padding: 148px 0;
+        margin-left: 15px;
+    }
+
+    .banner .elem-text h1 {
+        font-size: 38px;
+        line-height: 38px;
+    }
+
+    .banner .elem-text h2 {
+        font-size: 20px;
+        line-height: 28.4px;
+    }
+
+    .vertical-line {
+        margin-left: 30px;
+        height: 68px;
+    }
+
+    .wrapper-basket {
+        display: none;
+    }
+
+    .banner .elem-foto {    
+        display: none;
+    }
+
+    .nav .nav-ticket {
+        min-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .nav .nav-ticket--accesories {
+        background-size: cover;
+    }
+
+    .nav-container {
+        padding: 10px;
+    }
+
+    .contact-footer .copyright {
+        margin-bottom: 10px;
+        margin-left: 0;        
+    }
+
+    .offer-ticket-body {
+        grid-template-columns: repeat(auto-fill, minmax(63%, 3fr));
+        padding: 0 10px;
+    }
+
+    .ticket .btn--rectangle img {
+        min-width: 0;
+    }
+
+    .ticket img {
+        min-width: 100%;
+    }
+
+    .services-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-ticket {
+        margin: 48px 0 24px 0;
+    }
+
+    .services-container .service-ticket:last-child {
+        margin-bottom: 64px;
+    }
+
+    .contact-footer .social-networks {
+        margin-right: 0;
+    }
+
+    .contact-footer .container {
+        padding: 0 0;
+    }
+
+    .contact-head {
+        display: flex;
+        justify-content: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-head .send-data {
+        margin-right: 0;
+    }
+
+    .contact-head .about {
+        margin: 97px 0 0 0;
+    }
+
+    .send-data {
+        margin: 50px 0 140px 0;
+    }
+
+    .body-footer {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .send-data .field {
+        width: 67%;
+        padding: 20px 0 21px 0;
+        padding-left: 0px;
+        background: #E1E1E1;
+        border: 1px solid #E1E1E1;
+        border-radius: 50px 0px 0px 50px;
+        min-width: 0;
+        padding-left: 22px;
+    }
+
+    .send-data .field:focus {
+        width: 67%;
+        padding: 20px 0 21px 0;
+        padding-left: 0px;
+        background: #E1E1E1;
+        border: 1px solid #E1E1E1;
+        border-radius: 50px 0px 0px 50px;
+        min-width: 0;
+        padding-left: 22px;
+    }
+
+    .send-data .btn {
+        min-width: 33%;
+    }
+    /* .wrapper-send-data {
+        min-width: 100%;
+    } */
+}
