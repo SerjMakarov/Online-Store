@@ -4,9 +4,330 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>OnlineStore</title>
+    <link rel="stylesheet" href="../style.css">
+    <!-- <?xml-stylesheet type="text/css" href="style.css"?> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <div class="header-top-menu">
+                <ul class="top-menu-bode-elem">
+                    <li>
+                        <a href="../index.html" class="logo"><img src="../img/logo.png" alt="logo"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="search"><img src="../img/search.svg" alt="search"></a>
+                    </li>
+                </ul>
+                <ul class="top-menu-bode-elem">
+                    <li id="js-sandwich" class="sandwich">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </li>
+                    <li class="wrapper-auth">
+                        <a href="#" class="auth"><img src="../img/auth.svg" alt="log in"></a>
+                    </li>
+                    <li class="wrapper-basket">
+                        <a href="#" class="basket"><img src="../img/basket.svg" alt="basket"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav id="js-sandwich-menu" class="sandwich-menu">
+            <div class="close-header-menu"><a id="js-btn-close" href="#"><img src="../img/close-head-menu.svg" alt="close menu"></a></div>
+            <h2 class="subtitle">menu</h2>
+            <ul class="items">
+                <li>man</li>
+                <li class="item"><a href="#">Accessories</a></li>
+                <li class="item"><a href="#">Bags</a></li>
+                <li class="item"><a href="#">Denim</a></li>
+                <li class="item"><a href="#">T-Shirts</a></li>
+            </ul>
+            <ul class="items">
+                <li>women</li>
+                <li class="item"><a href="#">Accessories</a></li>
+                <li class="item"><a href="#">Jackets & Coats</a></li>
+                <li class="item"><a href="#">Polos</a></li>
+                <li class="item"><a href="#">T-Shirts</a></li>
+                <li class="item"><a href="#">Shirts</a></li>
+            </ul>
+            <ul class="items">
+                <li>kids</li>
+                <li class="item"><a href="#">Accessories</a></li>
+                <li class="item"><a href="#">Jackets & Coats</a></li>
+                <li class="item"><a href="#">Polos</a></li>
+                <li class="item"><a href="#">T-Shirts</a></li>
+                <li class="item"><a href="#">Shirts</a></li>
+                <li class="item"><a href="#">Bags</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="breadcrumb">
+        <div class="container breadcrumb-container">
+            <h2 class="subtitle">new arrivals</h2>
+            <div class="pagination">
+                <ul class="items">
+                    <li class="item">
+                        <a class="link " href="#">home</a>
+                    </li>
+                    <span>/</span>
+                    <li class="item">
+                        <a class="link " href="#">men</a>
+                    </li>
+                    <span>/</span>
+                    <li class="item">
+                        <a class="link active" href="#">new arrivals</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <main class="offer-ticket">
+        <div class="container">
+            <div class="filter">
+                <nav id="js-filter-menu" class="sandwich-menu">
+                    <h2 class="subtitle">filter</h2>
+                    <a href="#" id="js-btn-filter-close" class="link"><img src="../img/filter-menu.svg" alt="filter menu"></a>
+                    <ul class="items sub">
+                        <li class="active"><span class="vertical-line"></span>man</li>
+                        <li class="item"><a href="#">Accessories</a></li>
+                        <li class="item"><a href="#">Bags</a></li>
+                        <li class="item"><a href="#">Denim</a></li>
+                        <li class="item"><a href="#">T-Shirts</a></li>
+                        <li class="item"><a href="#">Bags</a></li>
+                        <li class="item"><a href="#">Denim</a></li>
+                        <li class="item"><a href="#">T-Shirts</a></li>
+                        <li class="item"><a href="#">Bags</a></li>
+                        <li class="item"><a href="#">Denim</a></li>
+                        <li class="item"><a href="#">Bags</a></li>
+                        <li class="item"><a href="#">Denim</a></li>
+                    </ul>
+                    <ul class="items sub">
+                        <li><span class="vertical-line"></span>women</li>
+                    </ul>
+                    <ul class="items sub">
+                        <li><span class="vertical-line"></span>kids</li>
+                    </ul>
+                </nav>
+                <div class="filter-menu">
+                    <ul class="items">
+                        <li class="item">
+                            <h2 class="link">filter</h2>
+                        </li>
+                        <li class="item">
+                            <a href="#" id="js-btn-filter" class="link"><img src="../img/filter-menu.svg" alt="filter menu"></a>
+                        </li>
+                    </ul>                  
+                </div>
+                <div class="filter-param">
+                    <ul class="items">
+                        <li class="item">
+                            <a href="#" class="link">trending now</a>
+                            <a href="#"><img src="../img/arrow-bottom-param.svg" alt="arrow bottom"></a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="link">size</a>
+                            <a id="js-btn-param" href="#"><img src="../img/arrow-bottom-param.svg" alt="arrow bottom"></a>
+                            <div id="js-menu-param" class="menu-param">
+                                <ul class="items">
+                                    <li class="item">
+                                        <input type="checkbox" name="xs" id="xs">
+                                        <label for="xs"><span>xs</span></label>
+                                    </li>
+                                    <li class="item"><input type="checkbox" name="s" id=""><span>s</span></li>
+                                    <li class="item"><input type="checkbox" name="m" id=""><span>m</span></li>
+                                    <li class="item"><input type="checkbox" name="l" id=""><span>l</span></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="link">price</a>
+                            <a href="#"><img src="../img/arrow-bottom-param.svg" alt="arrow bottom"></a>
+                        </li>
+                    </ul>                                                         
+                </div>
+            </div>
+            <div class="offer-ticket-body">
+                <div class="ticket">
+                    <div class="ticket-hidden">
+                        <a href="#" class="btn--rectangle"><img src="../img/ticket-add-basket.svg" alt="add in basket">Add to Cart</a>
+                    </div>
+                    <img class="ticket-head" src="../img/photo-1.jpg" alt="photo man">
+                    <div class="ticket-footer">
+                        <h3>ellery x m'o capsule</h3>
+                        <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <span class="price">$52.00</span>
+                    </div>
+                </div>
+                <div class="ticket">
+                    <div class="ticket-hidden">
+                        <a href="#" class="btn--rectangle"><img src="../img/ticket-add-basket.svg" alt="add in basket">Add to Cart</a>
+                    </div>
+                    <img class="ticket-head" src="../img/photo-7.jpg" alt="photo women">
+                    <div class="ticket-footer">
+                        <h3>ellery x m'o capsule</h3>
+                        <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <span class="price">$52.00</span>
+                    </div>
+                </div>
+                <div class="ticket">
+                    <div class="ticket-hidden">
+                        <a href="#" class="btn--rectangle"><img src="../img/ticket-add-basket.svg" alt="add in basket">Add to Cart</a>
+                    </div>
+                    <img class="ticket-head" src="../img/photo-3.jpg" alt="photo man">
+                    <div class="ticket-footer">
+                        <h3>ellery x m'o capsule</h3>
+                        <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <span class="price">$52.00</span>
+                    </div>
+                </div>
+                <div class="ticket">
+                    <div class="ticket-hidden">
+                        <a href="#" class="btn--rectangle"><img src="../img/ticket-add-basket.svg" alt="add in basket">Add to Cart</a>
+                    </div>
+                    <img class="ticket-head" src="../img/photo-4.jpg" alt="photo man">
+                    <div class="ticket-footer">
+                        <h3>ellery x m'o capsule</h3>
+                        <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <span class="price">$52.00</span>
+                    </div>
+                </div>
+                <div class="ticket">
+                    <div class="ticket-hidden">
+                        <a href="#" class="btn--rectangle"><img src="../img/ticket-add-basket.svg" alt="add in basket">Add to Cart</a>
+                    </div>
+                    <img class="ticket-head" src="../img/photo-8.jpg" alt="photo women">
+                    <div class="ticket-footer">
+                        <h3>ellery x m'o capsule</h3>
+                        <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <span class="price">$52.00</span>
+                    </div>
+                </div>
+                <div class="ticket">
+                    <div class="ticket-hidden">
+                        <a href="#" class="btn--rectangle"><img src="../img/ticket-add-basket.svg" alt="add in basket">Add to Cart</a>
+                    </div>
+                    <img class="ticket-head" src="../img/photo-9.jpg" alt="photo women">
+                    <div class="ticket-footer">
+                        <h3>ellery x m'o capsule</h3>
+                        <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <span class="price">$52.00</span>
+                    </div>
+                </div>
+                <div class="ticket">
+                    <div class="ticket-hidden">
+                        <a href="#" class="btn--rectangle"><img src="../img/ticket-add-basket.svg" alt="add in basket">Add to Cart</a>
+                    </div>
+                    <img class="ticket-head" src="../img/photo-10.jpg" alt="photo man">
+                    <div class="ticket-footer">
+                        <h3>ellery x m'o capsule</h3>
+                        <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <span class="price">$52.00</span>
+                    </div>
+                </div>
+                <div class="ticket">
+                    <div class="ticket-hidden">
+                        <a href="#" class="btn--rectangle"><img src="../img/ticket-add-basket.svg" alt="add in basket">Add to Cart</a>
+                    </div>
+                    <img class="ticket-head" src="../img/photo-11.jpg" alt="photo women">
+                    <div class="ticket-footer">
+                        <h3>ellery x m'o capsule</h3>
+                        <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <span class="price">$52.00</span>
+                    </div>
+                </div>
+                <div class="ticket">
+                    <div class="ticket-hidden">
+                        <a href="#" class="btn--rectangle"><img src="../img/ticket-add-basket.svg" alt="add in basket">Add to Cart</a>
+                    </div>
+                    <img class="ticket-head" src="../img/photo-12.jpg" alt="photo women">
+                    <div class="ticket-footer">
+                        <h3>ellery x m'o capsule</h3>
+                        <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <span class="price">$52.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination--footer">
+                <div class="wrapper">
+                    <ul class="items">
+                        <li class="item"><a href="#" class="link--arrow"><img src="../img/arrow-back-page.svg" alt="arrow next page"></a></li>
+                        <li class="item"><a href="#" class="link active">1</a></li>
+                        <li class="item"><a href="#" class="link">2</a></li>
+                        <li class="item"><a href="#" class="link">3</a></li>
+                        <li class="item"><a href="#" class="link">4</a></li>
+                        <li class="item"><a href="#" class="link">5</a></li>
+                        <li class="item"><a href="#" class="link">6</a></li>
+                        <span>......</span>
+                        <li class="item"><a href="#" class="link">20</a></li>
+                        <li class="item"><a href="#" class="link--arrow"><img src="../img/arrow-next-page.svg" alt="arrow back page"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="services">
+        <div class="container services-container">
+            <div class="service-ticket">
+                <img src="../img/vector-car.svg" alt="free delivery" class="vector-img">
+                <h3 class="subtitle">Free Delivery</h3>
+                <p class="text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+            </div>
+            <div class="service-ticket">
+                <img src="../img/vector-sale.svg" alt="Quality assurance" class="vector-img">
+                <h3 class="subtitle">Quality assurance</h3>
+                <p class="text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+            </div>
+            <div class="service-ticket">
+                <img src="../img/vector-quality.svg" alt="Quality assurance" class="vector-img">
+                <h3 class="subtitle">Quality assurance</h3>
+                <p class="text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container contact-head">
+            <div class="about">
+                <img src="../img/photo-human.png" alt="human">
+                <p class="text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <i>a pulvinar purus condimentum“</i></p>
+            </div>
+            <div class="send-data">
+                <h3 class="subtitle">subscribe</h3>
+                <p class="text">for our newletter and promotion</p>
+                <div class="wrapper-send-data">
+                    <input id="js-pattern-email" class="field" type="text" placeholder="Enter Your Email">
+                    <a id="btn-subscribe" class="btn cleared" href="">Subscribe</a>
+                </div>
+            </div>
+        </div>
+        <div class="contact-footer">
+            <div class="container body-footer">
+                <div class="copyright">
+                    <p class="text">&copy; 2021  Brand  All Rights Reserved.</p>
+                </div>
+                <div class="social-networks">
+                    <div class="facebook">
+                        <img src="../img/facebook.svg" alt="facebook">
+                    </div>
+                    <div class="instagram">
+                        <img src="../img/instagram.svg" alt="instagram">
+                    </div>
+                    <div class="pinterest">
+                        <img src="../img/pinterest.svg" alt="pinterest">
+                    </div>
+                    <div class="twitter">
+                        <img src="../img/twitter.svg" alt="twitter">
+                    </div>
+                </div>
+            </div>
+        </div>          
+    </footer>
+    <script src="../js/main.js"></script>
 </body>
 </html>
+
