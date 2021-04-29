@@ -6,6 +6,28 @@ let btn_filter = document.getElementById('js-btn-filter');
 let btn_filter_close = document.getElementById('js-btn-filter-close');
 let btn_param = document.getElementById('js-btn-param');
 let menu_param = document.getElementById('js-menu-param');
+let pattern_email = document.getElementById('js-pattern-email');
+let btn_subscribe = document.getElementById('btn-subscribe');
+
+
+btn_subscribe.addEventListener('click', function(e) {
+    e.preventDefault();
+    down();
+  }, false);
+
+
+function down(){
+    let pattern = /^\w+@[A-Za-z_]+?\.[A-Za-z]{2,3}$/gm;
+    let email = pattern_email.value.match(pattern)
+
+    if(email === null){
+        pattern_email.style.border = '1px solid red'
+    }
+
+    if(email){
+        pattern_email.style.border = '1px solid green'
+    }
+}
 
 btn.onclick = function(){
     if(menu.style.display === '' || 'none'){
