@@ -413,6 +413,11 @@ body {
 
 /* style footer */
 
+
+.footer-bg {
+    background: url(img/background-contact-footer.jpg) center / cover no-repeat;
+}
+
 .contact-footer {
     background: #222224;
 }
