@@ -308,8 +308,11 @@ body {
     color: #F16D7F;
 }
 
-.btn {
+
+
+.offer-ticket .btn {
     text-align: center;
+    margin: 48.5px 0 95.5px 0; 
 }
 
 .btn--rectangle {
@@ -472,6 +475,7 @@ body {
 }
 
 .send-data .btn {
+    text-align: center;
     float: right;
     text-decoration: none;
     display: block;
