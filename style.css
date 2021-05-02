@@ -282,12 +282,12 @@ body {
 }
 
 .ticket .ticket-footer {
+    padding: 20px;
     background-color: #F8F8F8;
-    padding-bottom: 20px;
 }
 
 .offer-ticket-body .ticket-footer h3 {
-    padding: 23.35px 193.89px 0 18px;
+    /* padding: 23.35px 193.89px 0 18px; */
     font-size: 13px;
     line-height: 16px;
     color: #000000;
@@ -295,7 +295,7 @@ body {
 }
 
 .offer-ticket-body .ticket-footer p {
-    margin: 12.65px 16.46px 18px 16.46px;
+    margin: 12.65px 0 18px 0;
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
@@ -303,7 +303,6 @@ body {
 }
 
 .offer-ticket-body .ticket-footer .price {
-    margin: 0 289.13px 0 18.41px;
     font-size: 16px;
     line-height: 19px;
     color: #F16D7F;
@@ -316,15 +315,17 @@ body {
 .btn--rectangle {
     display: inline-block;
     border: 1px solid #FF6A6A;
-    margin: 48.5px 0 95.5px 0;
     padding: 14.5px 38.5px;
     color: #FF6A6A;
     text-decoration: none;
 }
 
 .ticket {
-    position: relative;
     background: rgba(58, 56, 56);
+}
+
+.ticket-head{
+    position: relative;
 }
 
 .ticket .btn--rectangle {
@@ -565,7 +566,7 @@ body {
     display: flex;
 }
 
-.pagination .items span {
+.pagination .solidus {
     margin: 0 5px;
     color: #636363;
 }
@@ -750,7 +751,7 @@ body {
     padding: 11.5px 40.5px ;
 }
 
-.pagination--footer .items span {
+.pagination--footer .point {
     color: #b8b6b6;
 }
 
@@ -772,7 +773,7 @@ body {
 
 .filter-menu {
     flex: 1 100%;
-    margin-left: -7px;
+    /* margin-left: -7px; */
 }
 
 .filter-param {
