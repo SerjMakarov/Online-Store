@@ -81,7 +81,7 @@ body {
     max-width: 232px;
     background: #FFF;
     padding: 37px 143px 157px 33px;
-    box-shadow: 0 0 17px rgb(0 0 0 / 20%);
+    box-shadow: 0 0 17px rgb(0, 0, 0 / 20%);
     z-index: 9999999;
 }
 
@@ -322,7 +322,7 @@ body {
 }
 
 .ticket {
-    background: rgba(58, 56, 56);
+    background: rgb(58, 56, 56);
 }
 
 .ticket-head{
@@ -650,7 +650,7 @@ body {
     padding: 16px 0 0 16px;
     top: -18px;
     left: 0;
-    box-shadow: 0 0 17px rgb(0 0 0 / 20%);
+    box-shadow: 0 0 17px rgb(0, 0, 0 / 20%);
 }
 
 .filter .sandwich-menu h2 {
@@ -707,7 +707,7 @@ body {
     display: none;
     position: absolute;
     background-color: #FFF;
-    box-shadow: 0 0 17px rgb(0 0 0 / 20%);
+    box-shadow: 0 0 17px rgb(0, 0, 0 / 20%);
     z-index: 9999999999;
 }
 
