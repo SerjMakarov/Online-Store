@@ -81,7 +81,7 @@ body {
     max-width: 232px;
     background: #FFF;
     padding: 37px 143px 157px 33px;
-    box-shadow: 0 0 17px rgb(0 0 0 / 20%);
+    box-shadow: 0 0 17px rgb(0, 0, 0 / 20%);
     z-index: 9999999;
 }
 
@@ -253,7 +253,6 @@ body {
 
 .offer-ticket-body {
     display: grid;
-    /* grid-template-columns: repeat(3, 1fr); */
     grid-template-columns: repeat(auto-fill, minmax(28%, 3fr));
     grid-row-gap: 30px;
     grid-column-gap: 30px;
@@ -276,10 +275,6 @@ body {
     color: #9F9F9F;
 }
 
-.offer-ticket-body .ticket {
-    /* max-width: 0; */
-}
-
 .ticket img {
     display: block;
     min-height: auto;
@@ -287,12 +282,12 @@ body {
 }
 
 .ticket .ticket-footer {
+    padding: 20px;
     background-color: #F8F8F8;
-    padding-bottom: 20px;
 }
 
 .offer-ticket-body .ticket-footer h3 {
-    padding: 23.35px 193.89px 0 18px;
+    /* padding: 23.35px 193.89px 0 18px; */
     font-size: 13px;
     line-height: 16px;
     color: #000000;
@@ -300,7 +295,7 @@ body {
 }
 
 .offer-ticket-body .ticket-footer p {
-    margin: 12.65px 16.46px 18px 16.46px;
+    margin: 12.65px 0 18px 0;
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
@@ -308,28 +303,30 @@ body {
 }
 
 .offer-ticket-body .ticket-footer .price {
-    margin: 0 289.13px 0 18.41px;
     font-size: 16px;
     line-height: 19px;
     color: #F16D7F;
 }
 
-.btn {
+.offer-ticket .btn {
     text-align: center;
+    margin: 48.5px 0 95.5px 0; 
 }
 
 .btn--rectangle {
     display: inline-block;
     border: 1px solid #FF6A6A;
-    margin: 48.5px 0 95.5px 0;
     padding: 14.5px 38.5px;
     color: #FF6A6A;
     text-decoration: none;
 }
 
 .ticket {
+    background: rgb(58, 56, 56);
+}
+
+.ticket-head{
     position: relative;
-    background: rgba(58, 56, 56);
 }
 
 .ticket .btn--rectangle {
@@ -413,6 +410,10 @@ body {
 
 /* style footer */
 
+.footer-bg {
+    background: url(img/background-contact-footer.jpg) center / cover no-repeat;
+}
+
 .contact-footer {
     background: #222224;
 }
@@ -459,7 +460,7 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 24px;
-    line-height: 40,13px;
+    line-height: 40.13px;
     text-align: center;
 }
 
@@ -467,17 +468,18 @@ body {
     margin: 10px 0 32px 0;
     text-transform: uppercase;
     font-size: 18px;
-    line-height: 30,1px;
+    line-height: 30.1px;
     text-align: center;
 }
 
 .send-data .btn {
+    text-align: center;
     float: right;
     text-decoration: none;
     display: block;
     min-width: 100px;
     background: #F16D7F;
-    border-radius: 0px 50px 50px 0px;
+    border-radius: 0 50px 50px 0;
     padding: 21px 0 20px 0;
     color: #fff;
 }
@@ -490,7 +492,7 @@ body {
     padding: 22px 0 21px 0;
     background: #E1E1E1;
     border: 1px solid #E1E1E1;
-    border-radius: 50px 0px 0px 50px;
+    border-radius: 50px 0 0 50px;
     min-width: 256px;
     padding-left: 22px;
 }
@@ -530,7 +532,7 @@ body {
     padding: 22px 0 21px 0;
     background: #E1E1E1;
     border: 1px solid #F16D7F;;
-    border-radius: 50px 0px 0px 50px;
+    border-radius: 50px 0 0 50px;
     min-width: 256px;
     padding-left: 22px;
     outline: none;
@@ -566,7 +568,7 @@ body {
     display: flex;
 }
 
-.pagination .items span {
+.pagination .solidus {
     margin: 0 5px;
     color: #636363;
 }
@@ -578,10 +580,6 @@ body {
     font-size: 14px;
     line-height: 17px;
 }
-
-/* .pagination .active {
-    color: #F16D7F;
-} */
 
 /* filter style */
 
@@ -649,10 +647,10 @@ body {
     min-width: 31.6%;
     display: none;
     z-index: 999999;
-    padding: 16px 0 0px 16px;
+    padding: 16px 0 0 16px;
     top: -18px;
     left: 0;
-    box-shadow: 0 0 17px rgb(0 0 0 / 20%);
+    box-shadow: 0 0 17px rgb(0, 0, 0 / 20%);
 }
 
 .filter .sandwich-menu h2 {
@@ -709,11 +707,8 @@ body {
     display: none;
     position: absolute;
     background-color: #FFF;
-    box-shadow: 0 0 17px rgb(0 0 0 / 20%);
+    box-shadow: 0 0 17px rgb(0, 0, 0 / 20%);
     z-index: 9999999999;
-    /* top: 24px;
-    left: 540px; */
-   
 }
 
 .filter .menu-param .items {
@@ -730,7 +725,6 @@ body {
     margin-right: 9px;
     border: 1px solid #e2dbdb;
     background-color: #EF5B70;
-    /* opacity: .5; */
 }
 
 .filter .menu-param span {
@@ -759,7 +753,7 @@ body {
     padding: 11.5px 40.5px ;
 }
 
-.pagination--footer .items span {
+.pagination--footer .point {
     color: #b8b6b6;
 }
 
@@ -781,7 +775,7 @@ body {
 
 .filter-menu {
     flex: 1 100%;
-    margin-left: -7px;
+    /* margin-left: -7px; */
 }
 
 .filter-param {
@@ -792,6 +786,110 @@ body {
     display: flex;
     justify-content: flex-end;
     margin-right: -16px;
+}
+
+.product-offer-ticket .offer-ticket-body {
+    margin: 128px 0;
+}
+
+/* slider style */
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F7F7F7;
+    border: 1px solid #EAEAEA;
+}
+
+.slider .product-photo {
+    margin: 11px 0 60px 0;
+}
+
+.slider .product-photo img {
+    height: auto;
+    width: 100%;
+}
+
+
+.slider .arrow {
+    padding: 12px 17px;
+    background: rgba(42, 42, 42, 0.15);
+}
+
+/*ticket-product-info*/
+
+.wrapper-ticket-product-info {
+    top: 10px;
+    padding: 64px 0;
+    border: 1px solid #EAEAEA;
+    background: #fff;
+    margin-top: -60px;
+}
+
+.ticket-product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ticket-product-info .filter {
+    margin-top: 0;
+}
+
+.ticket-product-info .sub-catalog {
+    text-transform: uppercase;
+    color: #EF5B70;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.ticket-product-info .line-header {
+    min-width: 63px;
+    height: 3px;
+    background-color: #EF5B70;
+    margin: 12px 0;
+}
+
+.ticket-product-info .name-product {
+    text-transform: uppercase;
+    color: #4D4D4D;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.ticket-product-info .description {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    max-width: 554px;
+    margin: 48px 0 32px 0;
+}
+
+.ticket-product-info .price {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #EF5B70;
+}
+
+.ticket-product-info .line-footer {
+    min-width: 641px;
+    border: 1px solid #EAEAEA;
+    margin: 65px 250px;
+}
+
+.ticket-product-info .btn--rectangle {
+    display: flex;
+    align-items: center;
+    margin: 48px 0 0 0;
+}
+
+.ticket-product-info .btn--rectangle img {
+    margin: 0 22px 0 0;
 }
 
  @media (min-width: 768px) and (max-width: 1080px){
@@ -899,7 +997,6 @@ body {
 
     .contact-head {
         display: flex;
-        justify-content: none;
         flex-direction: column;
         align-items: center;
     }
@@ -1034,7 +1131,6 @@ body {
 
     .contact-head {
         display: flex;
-        justify-content: none;
         flex-direction: column;
         align-items: center;
     }
@@ -1060,10 +1156,9 @@ body {
     .send-data .field {
         width: 67%;
         padding: 21px 0 21px 0;
-        padding-left: 0px;
         background: #E1E1E1;
         border: 1px solid #E1E1E1;
-        border-radius: 50px 0px 0px 50px;
+        border-radius: 50px 0 0 50px;
         min-width: 0;
         padding-left: 22px;
     }
@@ -1071,10 +1166,10 @@ body {
     .send-data .field:focus {
         width: 67%;
         padding: 21px 0 21px 0;
-        padding-left: 0px;
+        padding-left: 0;
         background: #E1E1E1;
         border: 1px solid #E1E1E1;
-        border-radius: 50px 0px 0px 50px;
+        border-radius: 50px 0 0 50px;
         min-width: 0;
         padding-left: 22px;
     }
@@ -1106,7 +1201,7 @@ body {
     }
 
     .filter-param .items {
-        margin-right: 0px;
+        margin-right: 0;
     }
 
     .filter-param img {
@@ -1146,6 +1241,19 @@ body {
 
     .filter .sandwich-menu h2 {
         display: none;
+    }
+
+    .ticket-product-info .description {
+        max-width: 340px;
+    }
+
+    .ticket-product-info .filter-param .link {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .ticket-product-info .line-footer {
+        min-width: 174px;
     }
 }
 
