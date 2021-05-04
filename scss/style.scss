@@ -1,3 +1,5 @@
+$pink-color: #F16D7F;
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,7 +7,7 @@
 }
 
 .active {
-    color: #F16D7F !important;
+    color: $pink-color !important;
 }
 
 html, body {
@@ -121,7 +123,7 @@ body {
     text-transform: uppercase;
     font-size: 14px;
     line-height: 17px;
-    color: #F16D7F;
+    color: $pink-color;
 }
 
 .sandwich-menu .items li:last-child {
@@ -131,7 +133,7 @@ body {
 /* Псевдоклассы header */
 
 .sandwich:hover > span {
-    background: #F16D7F;
+    background: $pink-color;
 }
 
 /* banner styles */
@@ -149,13 +151,13 @@ body {
 .banner .elem-foto {
     min-height: 764px;
     min-width: 50%;
-    background: url(img/photo-man-jacket.png) no-repeat -225px / cover;
+    background: url(../img/photo-man-jacket.png) no-repeat -225px / cover;
 }
 
 .vertical-line {
     height: 92px;
     width: 12px;
-    background: #F16D7F;
+    background: $pink-color;
     margin-right: 16px;
 }
 
@@ -178,7 +180,7 @@ body {
 }
 
 .banner .elem-text .text-color {
-    color: #F16D7F;
+    color: $pink-color;
 }
 
 /* navigator styles */
@@ -199,20 +201,20 @@ body {
 }
 
 .nav-ticket--women {
-    background-image: url(img/photo-for-women.png);
+    background-image: url(../img/photo-for-women.png);
 }
 
 .nav-ticket--man {
-    background-image: url(img/photo-for-man.png);
+    background-image: url(../img/photo-for-man.png);
 }
 
 .nav-ticket--kids {
-    background-image: url(img/photo-for-kids.png);
+    background-image: url(../img/photo-for-kids.png);
 }
 
 .nav .nav-ticket--accesories {
     background-position: center;
-    background-image: url(img/photo-for-accesories.png);
+    background-image: url(../img/photo-for-accesories.png);
     flex:1 100%;
     margin-top: 30px;
 }
@@ -245,7 +247,7 @@ body {
     line-height: 28.8px;
     text-align: center;
     text-decoration: none;
-    color: #F16D7F;
+    color: $pink-color;
     text-transform: uppercase;
 }
 
@@ -305,7 +307,7 @@ body {
 .offer-ticket-body .ticket-footer .price {
     font-size: 16px;
     line-height: 19px;
-    color: #F16D7F;
+    color: $pink-color;
 }
 
 .offer-ticket .btn {
@@ -411,7 +413,7 @@ body {
 /* style footer */
 
 .footer-bg {
-    background: url(img/background-contact-footer.jpg) center / cover no-repeat;
+    background: url(../img/background-contact-footer.jpg) center / cover no-repeat;
 }
 
 .contact-footer {
@@ -478,7 +480,7 @@ body {
     text-decoration: none;
     display: block;
     min-width: 100px;
-    background: #F16D7F;
+    background: $pink-color;
     border-radius: 0 50px 50px 0;
     padding: 21px 0 20px 0;
     color: #fff;
@@ -531,7 +533,7 @@ body {
 .send-data input:focus {
     padding: 22px 0 21px 0;
     background: #E1E1E1;
-    border: 1px solid #F16D7F;;
+    border: 1px solid $pink-color;
     border-radius: 50px 0 0 50px;
     min-width: 256px;
     padding-left: 22px;
@@ -539,7 +541,7 @@ body {
 }
 
 .social-networks div:hover {
-    background: #F16D7F;
+    background: $pink-color;
 }
 
 /* pages catalog */
@@ -559,7 +561,7 @@ body {
     font-size: 24px;
     line-height: 29px;
     text-transform: uppercase;
-    color: #F16D7F;
+    color: $pink-color;
 }
 
 /* pagination header style */
@@ -892,6 +894,9 @@ body {
     margin: 0 22px 0 0;
 }
 
+@import 'cart';
+
+
  @media (min-width: 768px) and (max-width: 1080px){
 
     .header-top-menu {
@@ -900,7 +905,7 @@ body {
 
     .banner .elem-foto {
         min-height: 367px;
-        background: url(img/photo-man-jacket.png) no-repeat -53px / contain;
+        background: url(../img/photo-man-jacket.png) no-repeat -53px / contain;
     }
 
     .banner .elem-text h1 {
@@ -1256,4 +1261,3 @@ body {
         min-width: 174px;
     }
 }
-
