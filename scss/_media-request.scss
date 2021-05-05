@@ -136,6 +136,39 @@
         top: -18px;
         left: -7px;
     }
+
+    .cart {
+        display: flex;
+        flex-direction: column;
+        padding: 96px 15px 0 15px;
+    }
+
+    .product-list .wrapper-btn {
+        padding: 62px 0;
+    }
+    
+    .cart {
+        .send-form {
+            max-width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 128px;
+        }
+
+
+        .send-form {
+            form {
+                max-width: 49%;
+                flex: 1;
+            }
+    
+            .total {    
+                margin-top: 38px;
+                max-width: 49%;
+                flex: 1;
+            }
+        } 
+    }
 }
 
 @media (min-width: 230px) and (max-width: 767px) {
@@ -374,5 +407,60 @@
 
     .ticket-product-info .line-footer {
         min-width: 174px;
+    }
+
+    .cart {
+        display: flex;
+        flex-direction: column;
+        padding-top: 96px;
+        margin-bottom: 96px;
+    }
+
+    .card-product .propertes-product .propertes:first-child {
+        margin-bottom: 10px;
+    }
+
+    .card-product .propertes-product {
+        padding: 13px;
+    }
+
+    .product-list .card-product:nth-child(n+2) {
+        margin-top: 32px;
+    }
+
+    .card-product .head {
+        max-width: 42%;
+    }
+
+    .card-product .propertes-product .propertes .name-product {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .card-product .propertes-product .value-propertes,
+    .card-product .propertes-product .name-propertes {
+        font-size: 13px;
+        line-height: 17px;
+    }
+    
+    .product-list {
+        padding: 0 15px;
+    }
+
+    .product-list .btn {
+        font-size: 10px;
+        line-height: 14px;
+        padding: 8px 16px;
+    }
+
+    .send-form {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
+
+@media (min-width: 230px) and (max-width: 375px) {
+    .card-product .propertes-product {
+        padding: 6px 0 6px 13px;
     }
 }

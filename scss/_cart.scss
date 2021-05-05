@@ -7,8 +7,7 @@ $color-btn-cart: #A4A4A4;
 }
 
 .product-list {
-    max-width: 652px;
-
+    max-width: 100%;
 }
 
 .product-list {
@@ -161,9 +160,10 @@ $color-btn-cart: #A4A4A4;
     }
 
     .total {
-        margin-top: 50px;
+        margin-top: 69px;
         background: #F5F3F3;
         padding: 42px;
+        text-align: center;
     }
 
     .total {
@@ -186,6 +186,12 @@ $color-btn-cart: #A4A4A4;
             margin: 12px 0 21px 0;
         }
 
+        .total-btn span {
+            height: 1px;
+            background-color: azure;
+            max-width: 100%;
+        }
+
         .total-price span:last-child {
             font-weight: 700;
         }
@@ -198,7 +204,7 @@ $color-btn-cart: #A4A4A4;
         .btn {
             text-transform: uppercase;
             text-decoration: none;
-            display: inline-block;
+            display: block;
             background: $pink-color;
             padding: 16px 42px;
             color: #fff;
@@ -206,6 +212,14 @@ $color-btn-cart: #A4A4A4;
             font-size: 16px;
             line-height: 19.2px;
             border: 1px solid $pink-color;
+        }
+
+        .total-btn span {
+            display: block;
+            height: 1px;
+            background-color: #E2E2E2;
+            max-width: 100%;
+            margin-bottom: 17px;
         }
     }
 }
