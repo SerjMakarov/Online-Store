@@ -69,6 +69,7 @@ body {
 }
 
 .sandwich span:nth-child(even) {
+    display: block;
     margin: 8px 0;
 }
 
@@ -83,7 +84,7 @@ body {
     max-width: 232px;
     background: #FFF;
     padding: 37px 143px 157px 33px;
-    box-shadow: 0 0 17px rgb(0, 0, 0 / 20%);
+    box-shadow: -5px 5px 17px rgba(124, 124, 124, 0.5);
     z-index: 9999999;
 }
 
@@ -546,6 +547,8 @@ body {
 .social-networks div:hover {
     background: $pink-color;
 }
+
+@import 'anime';
 
 @import 'catalog';
 
