@@ -8,7 +8,9 @@ let btn_param = document.getElementById('js-btn-param');
 let menu_param = document.getElementById('js-menu-param');
 let pattern_email = document.getElementById('js-pattern-email');
 let btn_subscribe = document.getElementById('btn-subscribe');
-
+let line_1 = document.getElementById('line-1');
+let line_2 = document.getElementById('line-2');
+let line_3 = document.getElementById('line-3');
 
 btn_subscribe.addEventListener('click', function(e) {
     e.preventDefault();
@@ -32,12 +34,18 @@ function down(){
 btn.onclick = function(){
     if(menu.style.display === '' || 'none'){
         menu.style.display = 'block';
+        line_1.className = 'anime-sandwich_1';
+        line_2.className = 'anime-sandwich_2';
+        line_3.className = 'anime-sandwich_3';
         console.log(menu.style.display)
     }
 }
 
 btn_close.onclick = function(){
     if(menu.style.display === 'block'){
+        line_1.className = 'anime-sandwich_1end';
+        line_2.className = 'anime-sandwich_2end';
+        line_3.className = 'anime-sandwich_3end';
         menu.style.display = 'none'
     }
 }

@@ -1,0 +1,466 @@
+@media (min-width: 768px) and (max-width: 1024px){
+
+    .header-top-menu {
+        padding: 0 15px;
+    }
+
+    .banner .elem-foto {
+        min-height: 367px;
+        background: url(../img/photo-man-jacket.png) no-repeat -53px / contain;
+    }
+
+    .banner .elem-text h1 {
+        font-size: 43px;
+        line-height: 47px;
+        color: #222222;
+    }
+
+    .banner .elem-text h2 {
+        font-size: 29px;
+        line-height: 35.4px;
+        color: #222222;
+    }
+
+    .nav-container {
+        padding: 15px;
+    }
+
+    .nav-ticket .text-header {
+        margin: 0;
+    }
+    
+    .nav .nav-ticket--accesories .text-header {
+        padding: 31px;
+    }
+
+    .nav-ticket .text-header {
+        padding: 54px 0;
+    }
+
+    .nav .nav-ticket {
+        min-width: 32%;
+    }
+
+    .nav .nav-ticket--accesories {
+        margin-top: 20px;
+        background-size:auto;
+    }
+
+    .offer-ticket-body {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(40%, 3fr));
+        grid-row-gap: 15px;
+        grid-column-gap: 15px;
+        justify-items: center;
+        padding: 0 15px;
+    }
+
+    .nav .nav-ticket--accesories .text-header {
+        margin: 0 0;
+    }
+
+    .ticket img {
+        min-width: 100%;
+    }
+
+    .ticket .btn--rectangle img {
+        min-width: 0;
+    }
+
+    .ticket .btn--rectangle img {
+        display: inline-block;
+        vertical-align: middle;
+        padding-right: 11px;
+        height: auto;
+        min-width: 0;
+    
+    }
+
+    .ticket .btn--rectangle {
+        border: 1px solid #FFF;
+        padding: 12.5px 15px;
+        color: #FFF;
+        text-decoration: none;
+    }
+
+    .services-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-ticket {
+        margin: 48px 0 24px 0;
+    }
+
+    .services-container .service-ticket:last-child {
+        margin-bottom: 64px;
+    }
+
+    .contact-head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-head .send-data {
+        margin-right: 0;
+    }
+
+    .contact-head .about {
+        margin: 97px 0 0 0;
+    }
+
+    .send-data {
+        margin: 50px 0 140px 0;
+    }
+
+    .contact-footer {
+        padding: 0 15px;
+    }
+
+    .breadcrumb-container {
+        padding: 60px 15px;
+    }
+
+    .offer-ticket-body .ticket:last-child {
+        display: none;
+    }
+
+    .filter {
+        padding: 0 15px;
+    }
+
+    .filter .sandwich-menu {
+        min-width: 50.2%;
+        top: -18px;
+        left: -7px;
+    }
+
+    .cart {
+        display: flex;
+        flex-direction: column;
+        padding: 96px 15px 0 15px;
+    }
+
+    .product-list .wrapper-btn {
+        padding: 62px 0;
+    }
+    
+    .cart {
+        .send-form {
+            max-width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 128px;
+        }
+
+
+        .send-form {
+            form {
+                max-width: 49%;
+                flex: 1;
+            }
+    
+            .total {    
+                margin-top: 38px;
+                max-width: 49%;
+                flex: 1;
+            }
+        } 
+    }
+}
+
+@media (min-width: 230px) and (max-width: 767px) {
+
+    .header-top-menu {
+        padding: 0 15px;
+    }
+
+    .wrapper-auth {
+        display: none;
+    }
+
+    .container-banner {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .banner .wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .banner .elem-text {
+        flex: 1;
+        padding: 148px 0;
+    }
+
+    .banner .elem-text h1 {
+        font-size: 38px;
+        line-height: 38px;
+    }
+
+    .banner .elem-text h2 {
+        font-size: 20px;
+        line-height: 28.4px;
+    }
+
+    .wrapper .vertical-line {
+        height: 68px;
+    }
+
+    .wrapper-basket {
+        display: none;
+    }
+
+    .banner .elem-foto {    
+        display: none;
+    }
+
+    .nav .nav-ticket {
+        min-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .nav .nav-ticket--accesories {
+        background-size: cover;
+    }
+
+    .nav .nav-ticket--accesories .text-header {
+        margin: 27px 0;
+    }
+
+    .nav-container {
+        padding: 15px;
+        margin-bottom: 64px;
+    }
+
+    .contact-footer .copyright {
+        margin-bottom: 10px;
+        margin-left: 0;        
+    }
+
+    .offer-ticket-body {
+        grid-template-columns: repeat(auto-fill, minmax(63%, 3fr));
+        padding: 0 10px;
+        grid-row-gap: 15px;
+    }
+
+    .ticket .btn--rectangle img {
+        min-width: 0;
+    }
+
+    .ticket img {
+        min-width: 100%;
+    }
+
+    .services-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .service-ticket {
+        margin: 48px 0 24px 0;
+    }
+
+    .services-container .service-ticket:last-child {
+        margin-bottom: 64px;
+    }
+
+    .contact-footer .social-networks {
+        margin-right: 0;
+    }
+
+    .contact-footer .container {
+        padding: 0 0;
+    }
+
+    .contact-head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-head .send-data {
+        margin-right: 0;
+    }
+
+    .contact-head .about {
+        margin: 97px 0 0 0;
+    }
+
+    .send-data {
+        margin: 50px 0 140px 0;
+    }
+
+    .body-footer {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .send-data .field {
+        width: 67%;
+        padding: 21px 0 21px 0;
+        background: #E1E1E1;
+        border: 1px solid #E1E1E1;
+        border-radius: 50px 0 0 50px;
+        min-width: 0;
+        padding-left: 22px;
+    }
+
+    .send-data .field:focus {
+        width: 67%;
+        padding: 21px 0 21px 0;
+        padding-left: 0;
+        background: #E1E1E1;
+        border: 1px solid #E1E1E1;
+        border-radius: 50px 0 0 50px;
+        min-width: 0;
+        padding-left: 22px;
+    }
+
+    .send-data .btn {
+        min-width: 33%;
+        padding: 20px 0 20px 0;
+    }
+
+    .breadcrumb-container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .breadcrumb .subtitle {
+        margin: 24px 0 32px 0;
+    }
+
+    .breadcrumb .pagination {
+        margin-bottom: 46px;
+    }
+
+    .filter-menu {
+        flex: 1 17%;
+    }
+
+    .filter-menu .items h2{
+        display: none;
+    }
+
+    .filter-param .items {
+        margin-right: 0;
+    }
+
+    .filter-param img {
+        display: inline-block;
+        padding-left: 2px;
+        padding-right: 12px;
+    }
+
+    .filter-param .link {
+        padding: 0;
+    }
+
+    .pagination--footer .items {
+       padding: 11.5px 3.5px;
+    }
+
+    .pagination--footer .item {
+        padding: 0 9px;
+    }
+
+    .send-data .wrapper-send-data {
+        width: 90%;
+        text-align: center;
+        margin: 0 5%;
+        display: inline-block;
+    }
+
+    .filter .sandwich-menu .vertical-line {
+        margin-left: 0; 
+    }
+
+    .filter .sandwich-menu {
+        min-width: 103%;
+        top: -12px;
+        left: -10px;
+    }
+
+    .filter .sandwich-menu img {
+        margin: 0 0 10px -10px;
+    }
+
+    .filter .sandwich-menu h2 {
+        display: none;
+    }
+
+    .ticket-product-info .description {
+        max-width: 340px;
+    }
+
+    .ticket-product-info .filter-param .link {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .ticket-product-info .line-footer {
+        min-width: 174px;
+    }
+
+    .cart {
+        display: flex;
+        flex-direction: column;
+        padding-top: 96px;
+        margin-bottom: 96px;
+    }
+
+    .card-product .propertes-product .propertes:first-child {
+        margin-bottom: 10px;
+    }
+
+    .card-product .propertes-product {
+        padding: 13px;
+    }
+
+    .product-list .card-product:nth-child(n+2) {
+        margin-top: 32px;
+    }
+
+    .card-product .head {
+        max-width: 42%;
+    }
+
+    .card-product .propertes-product .propertes .name-product {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .card-product .propertes-product .value-propertes,
+    .card-product .propertes-product .name-propertes {
+        font-size: 13px;
+        line-height: 17px;
+    }
+    
+    .product-list {
+        padding: 0 15px;
+    }
+
+    .product-list .btn {
+        font-size: 10px;
+        line-height: 14px;
+        padding: 8px 16px;
+    }
+
+    .send-form {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
+
+@media (min-width: 230px) and (max-width: 375px) {
+    .card-product .propertes-product {
+        padding: 6px 0 6px 13px;
+    }
+}

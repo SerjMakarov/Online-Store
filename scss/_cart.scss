@@ -1,0 +1,226 @@
+$color-btn-cart: #A4A4A4;
+
+.cart {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 96px;
+}
+
+.product-list {
+    max-width: 100%;
+}
+
+.product-list {
+
+    .card-product:nth-child(n+2){
+        margin-top: 40px;
+    }
+
+    .wrapper-btn {
+        display: flex;
+        justify-content: space-between;
+        padding: 72px 0 128px 0;
+    }
+
+    .btn {
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block;
+        border: 1px solid $color-btn-cart;
+        padding: 16px 40px;
+        color: $color-btn-cart;
+    }
+
+}
+
+.card-product {
+    display: flex;
+    max-height: 306px;
+    box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+}
+
+.card-product {
+
+    .footer {
+        flex: 1;
+    }
+
+    .head img {
+        display: block;
+        height: auto;
+        max-width: 262px;
+        width: 100%;
+    }
+
+    .propertes-product {
+        padding: 22px 22px 62px 31px;
+    }
+
+    .propertes-product {
+        .propertes:first-child {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 42px;
+        }
+    }
+
+    .propertes-product {
+        .propertes .name-product {
+            text-transform: uppercase;
+            font-size: 24px;
+            line-height: 29px;
+            font-weight: 400;
+            color: #222222;
+            max-width: 262px;
+        }
+    }
+
+    .propertes-product {
+        .propertes img {
+            padding: 5px;
+        }
+    }
+
+    .propertes-product {
+        .propertes p, h2 {
+            display: inline-block;
+        }
+    }
+
+    .propertes-product {
+        .value-propertes, .name-propertes {
+            font-size: 22px;
+            line-height: 26px;
+            color: #575757;
+        }
+    }
+
+
+    .propertes-product {
+        .name-propertes {
+            margin-right: 5px;
+        }
+    }
+
+    .propertes-product {
+        .price {
+            color: $pink-color;
+        }
+    }
+
+    .propertes-product {
+        .quantity {
+            margin-left: 19px;
+            text-align: center;
+            max-width: 34px;
+            max-height: 24px;
+        }
+    }
+}
+
+.send-form {
+    max-width: 360px;
+}
+
+.send-form {
+
+    .subtitle {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+    }
+
+    input {
+        padding: 15px 0 15px 17px;
+        width: 100%;
+        border: 1px solid $color-btn-cart;
+        color: $color-btn-cart;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    input:nth-child(even) {
+        margin: 20px 0;
+    }
+
+    .btn {
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block;
+        border: 1px solid $color-btn-cart;
+        padding: 10px 12.5px;
+        color: $color-btn-cart;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 13px;
+    }
+
+    .total {
+        margin-top: 69px;
+        background: #F5F3F3;
+        padding: 42px;
+        text-align: center;
+    }
+
+    .total {
+
+        .sub-price {
+            text-align: right;
+            text-transform: uppercase;
+            font-size: 11px;
+            line-height: 13px;
+            color: #4A4A4A;
+        }    
+
+        .total-price {
+            text-align: right;
+            text-transform: uppercase;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #222222;
+            margin: 12px 0 21px 0;
+        }
+
+        .total-btn span {
+            height: 1px;
+            background-color: azure;
+            max-width: 100%;
+        }
+
+        .total-price span:last-child {
+            font-weight: 700;
+        }
+
+        hr {
+            margin: 21px 0 17px 0;
+            background: #E2E2E2;
+        }
+
+        .btn {
+            text-transform: uppercase;
+            text-decoration: none;
+            display: block;
+            background: $pink-color;
+            padding: 16px 42px;
+            color: #fff;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19.2px;
+            border: 1px solid $pink-color;
+        }
+
+        .total-btn span {
+            display: block;
+            height: 1px;
+            background-color: #E2E2E2;
+            max-width: 100%;
+            margin-bottom: 17px;
+        }
+    }
+}
+
