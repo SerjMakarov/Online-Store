@@ -1,0 +1,103 @@
+.registration {
+    margin-top: 64px;
+    margin-bottom: 96px;
+}
+
+.container-registration {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reg-form {
+    max-width: 359px;
+}
+
+.reg-form__title {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+}
+
+.reg-form__input-field {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    border: 1px solid #A4A4A4;
+    padding: 13.5px 0 13.5px 17px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.reg-form__desc {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    padding: 15.5px 0 39px 0;
+}
+
+.reg-form__submit {
+    background: #F16D7F;
+    padding: 16.5px 66px 16.5px 29px;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    background-image: url(../img/arrow-registr-btn.svg);
+    background-repeat: no-repeat;
+    background-position: 80% 50%;
+}
+
+.reg-form-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 132px;
+}
+
+.reg-form-btns__radio-btn {
+    width: 17px;
+    height: 17px;
+    margin: 30px 0;
+}
+
+.reg-form-btns__name-radio {
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+}
+
+.loyalty-content {
+    max-width: 652px;
+}
+
+.loyalty-content__title {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.loyalty-content__desc {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    padding: 22px 0;
+}
+
+.loyalty-content__items {
+    padding-left: 30px;
+}
+
+.loyalty-content__item {
+    padding: 0 0 16px 23px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    list-style-image: url(../img/ok.svg);
+}
