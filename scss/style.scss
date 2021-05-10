@@ -495,12 +495,11 @@ body {
 }
 
 .send-data .field {
-    padding: 22px 0 21px 0;
+    padding: 22px 0 21px 22px;
     background: #E1E1E1;
     border: 1px solid #E1E1E1;
     border-radius: 50px 0 0 50px;
     min-width: 256px;
-    padding-left: 22px;
 }
 
 .social-networks {
@@ -535,12 +534,11 @@ body {
 }
 
 .send-data input:focus {
-    padding: 22px 0 21px 0;
+    padding: 22px 0 21px 22px;
     background: #E1E1E1;
     border: 1px solid $pink-color;
     border-radius: 50px 0 0 50px;
     min-width: 256px;
-    padding-left: 22px;
     outline: none;
 }
 
