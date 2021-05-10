@@ -44,6 +44,9 @@
     text-transform: uppercase;
     color: #fff;
     border: none;
+    background-image: url(../img/arrow-registr-btn.svg);
+    background-repeat: no-repeat;
+    background-position: 80% 50%;
 }
 
 .reg-form-btns {
@@ -73,15 +76,15 @@
 .loyalty-content__title {
     text-transform: uppercase;
     font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 24px;
+    line-height: 29px;
     color: #000000;
 }
 
 .loyalty-content__desc {
     font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 24px;
+    line-height: 29px;
     color: #000000;
     padding: 22px 0;
 }
@@ -93,8 +96,8 @@
 .loyalty-content__item {
     padding: 0 0 16px 23px;
     font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 24px;
+    line-height: 29px;
     color: #000000;
     list-style-image: url(../img/ok.svg);
 }
