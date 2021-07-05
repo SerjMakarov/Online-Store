@@ -4,13 +4,25 @@ $color-btn-cart: #A4A4A4;
     display: flex;
     justify-content: space-between;
     padding-top: 96px;
+    padding-bottom: 128px;
 }
 
 .product-list {
+    display: flex;
+    flex-direction: column;
     max-width: 100%;
 }
 
 .product-list {
+
+    .clear {
+        display: block;
+        text-transform: uppercase;
+        color: #A4A4A4;
+        font-size: 20px;
+        text-align: center;
+        padding: 210px;
+    }
 
     .card-product:nth-child(n+2){
         margin-top: 40px;
@@ -19,7 +31,7 @@ $color-btn-cart: #A4A4A4;
     .wrapper-btn {
         display: flex;
         justify-content: space-between;
-        padding: 72px 0 128px 0;
+        padding: 72px 0 0 0;
     }
 
     .btn {
